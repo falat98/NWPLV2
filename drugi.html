@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Forma za upload datoteke -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"> <!-- Polje za odabir datoteke -->
+        <input type="submit" name="submit" value="Upload"> <!-- Gumb za slanje forme -->
+    </form>
+
+    <!-- Forma za dohvaćanje datoteke -->
+    <form action="fetch.php" method="post">
+        <input type="submit" name="submit" value="Fetch"> <!-- Gumb za dohvaćanje -->
+    </form>
+</body>
+</html>
